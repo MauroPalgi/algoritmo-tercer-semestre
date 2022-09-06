@@ -18,10 +18,20 @@ import java.util.logging.Logger;
 public class Helper {
 
     public void EjecutarTodosLosTest() {
+        
+       
         try {
             Class<?> c = Class.forName("practicos.Practico1");
-            Method method;
-            method = c.getDeclaredMethod("ejercicio1", int.class);
+            /*
+            Method[] declaredMethods = c.getMethods();
+            for (int i = 0; i < declaredMethods.length; i++) {
+                Method me = declaredMethods[i];
+                System.out.println(me.getName());
+                System.out.println(me.getParameterTypes()[0].getName());
+            }
+            */
+            System.out.println(int.class);
+            Method method = c.getDeclaredMethod("ejercicio1", int.class);
             method.invoke(c.getDeclaredConstructor().newInstance(), 1);
         } catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | ClassNotFoundException ex) {
             Logger.getLogger(Helper.class.getName()).log(Level.SEVERE, null, ex);
