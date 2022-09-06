@@ -11,6 +11,7 @@ import java.lang.reflect.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import auxiliares.helpers.Helper;
+import ordenamiento.Burbuja;
 
 /**
  *
@@ -24,14 +25,17 @@ public class Algoritmos {
     public static void main(String[] args) {
         // TODO code application logic here
         // EjecutarPractico0();
-        Helper auxiliar = new Helper();
-        auxiliar.EjecutarTodosLosTest();
+        // Helper auxiliar = new Helper();
+        // auxiliar.EjecutarTodosLosTest();
         // EjecutarPractico1();
+
+        int[] v = new int[]{1, 4, 10, 9, 26, 3, 19, 38, 79, 100};
+        Burbuja.Ordenar(v);
     }
 
     public static void EjecutarPractico0() {
         Practico0 practico = new Practico0();
-        
+
         // ejercicio 1
         // System.out.println(practico.ejercicio1().getValorString());
         // ejercicio 2
