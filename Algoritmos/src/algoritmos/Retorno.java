@@ -6,9 +6,9 @@ public class Retorno {
         OK, ERROR, NO_IMPLEMENTADA
     }
 
-    int valorEntero = 0;
-    String valorString = "";
-    boolean valorBooleano = false;
+    private int valorEntero = 0;
+    private String valorString = "";
+    private boolean valorBooleano = false;
 
     public int getValorEntero() {
         return valorEntero;

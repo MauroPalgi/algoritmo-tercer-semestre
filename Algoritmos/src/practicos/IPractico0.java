@@ -13,7 +13,7 @@ public interface IPractico0 {
      promedio, la cantidad de números pares y retorne la suma del
      valor absoluto de los números. El método debe imprimir por consola
      los datos calculados. Pruebelo con 3 conjuntos de datos.*/
-    public Retorno ejercicio2();
+    public Retorno ejercicio2(int a, int b);
 
     /* Implemente un método que reciba un int e imprima los dígitos de
      forma separada. Asuma que el número ingresado es positivo
@@ -23,7 +23,7 @@ public interface IPractico0 {
     /* Implemente un método que reciba dos int e imprima el mayor de
      ellos y la suma de todos los números desde el principio hasta ese
      máximo inclusive*/
-    public Retorno ejercicio4();
+    public Retorno ejercicio4(int a, int b);
 
     /* Cree la clase Triángulo. Debe incluir los siguientes métodos que devuelven un valor booleano:
     a. public boolean esEscaleno ()
@@ -45,6 +45,6 @@ public interface IPractico0 {
     Incluir métodos de acceso y modificación. 
     Agregar dos métodos de clase para prueba:
     ejemplo1: crea un funcionario con datos a ingresar por el operador y lo muestra 
-    ejemplo2: crea dos funcionarios  usando el ejemplo1) e indica además cuál gana más.*/
+    ejemplo2: crea dos funcionarios  usando el ejemplo1  e indica además cuál gana más.*/
     public Retorno ejercicio7();
 }
