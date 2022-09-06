@@ -30,6 +30,10 @@ public class Retorno {
         return valorBooleano;
     }
 
+    public String getValorBooleanoString() {
+        return this.valorBooleano ? "true" : "false";
+    }
+
     public void setValorBooleano(boolean valorBooleano) {
         this.valorBooleano = valorBooleano;
     }
